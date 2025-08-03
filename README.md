@@ -86,7 +86,7 @@ deactivate              # Exit venv
 
 ```bash
 sudo crontab -e
-*/3 * * * * python3 /home/muhannad/python_file/main.py
+*/3 * * * *  /home/muhannad/Desktop/python_file/main.py
 sudo grep cron /var/log/syslog  # View cron logs
 ```
 
@@ -94,7 +94,8 @@ sudo grep cron /var/log/syslog  # View cron logs
 
 ### 🔄 systemd Service Setup
 
-**Create `/etc/systemd/system/bbxoApi.service`:**
+**Create nano bbxoapi.service
+**Enter the directory `/etc/systemd/system/bbxoApi.service`:**
 
 ```ini
 [Unit]
